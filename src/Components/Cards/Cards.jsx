@@ -12,8 +12,8 @@ const Cards = (props) => {
     return (
         <div>
             <div class="card" >
-                <img src={props.imgUrl} class="card-img-top" alt="..." />
-                <Stack sx={{ justifyContent: "space-between", padding: "0 5px 10px 5px" }}>
+                <img src={props.imgUrl} height={30} alt="..." />
+                <Stack sx={{ justifyContent: "space-between", padding: "0 5px 10px 5px" }} height="100%">
                     <div class="card-body">
                         <h5 class="card-title">{props.title}</h5>
                         <Collapse in={expand}>

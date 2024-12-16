@@ -45,7 +45,7 @@ const NewsContainer = (props) => {
             <PuffLoader />
           </div>
         ) : (
-          <div className="news-cards gap-3">
+          <div className="news-cards gap-5">
             {newsData.map((news) => {
               return (
                 <>
