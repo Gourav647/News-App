@@ -1,0 +1,12 @@
+.navbar{
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px rgb(210, 210, 210) ;
+}
+
+.Colored{
+    background-color: #ACE1AF;
+}
+
+span{
+    cursor: pointer;
+}

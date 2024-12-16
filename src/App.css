@@ -1,0 +1,40 @@
+.App{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+.up-side{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 2px 1px 10px rgb(116, 115, 115);
+    background-color: #ACE1AF;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    right: 70px;
+    bottom: 70px;
+    position: fixed;
+    z-index: 1;
+}
+
+.Show{
+    display: flex;
+}
+
+.up-side i{
+    font-size: 1.6vw;
+}
+
+.Content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #000000;
+    overflow: hidden;
+}
