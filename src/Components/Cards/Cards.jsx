@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Cards.css'
-import { Button, Collapse, IconButton, Stack } from '@mui/material'
+import { Button, Collapse, IconButton, Stack, Typography } from '@mui/material'
 import { KeyboardArrowDown } from '@mui/icons-material'
 
 const Cards = (props) => {
@@ -16,8 +16,10 @@ const Cards = (props) => {
                 <Stack sx={{ justifyContent: "space-between", padding: "0 5px 10px 5px" }} height="100%">
                     <div class="card-body">
                         <h5 class="card-title">{props.title}</h5>
-                        <Collapse in={expand}>
+                        <Collapse in={expand} style={{height: "fit-content"}}>
+                        <Typography fontSize={14}>
                             <p class="card-text">{props.description}</p>
+                        </Typography>
                         </Collapse>
                         <Stack sx={{ justifyContent: "space-between", alignItems: "center" }} direction='row'>
                             <span>{props.author} ~</span>

@@ -57,9 +57,9 @@ const NewsContainer = (props) => {
                           ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhKE_k4qoe2RJWmpPc22DahftQed2fhqVeFfBh93_Hcw&s"
                           : news.urlToImage
                       }
-                      title={news.title === null ? "" : news.title.split(" ").slice(0, 8).join(" ") + "..."}
-                      description={news.description === null ? "" : news.description.split(" ").slice(0, 18).join(" ") + "..."}
-                      author={news.author}
+                      title={news.title === null ? "" : news.title.split(" ").slice(0, 5).join(" ") + "..."}
+                      description={news.description === null ? "" : news.description.split(" ").slice(0, 10).join(" ") + "..."}
+                      author={(news.author).split(" ").slice(0,2).join(" ") + "..."}
                       url={news.url}
                     />
                   ) : null}
