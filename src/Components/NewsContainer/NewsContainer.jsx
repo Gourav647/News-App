@@ -36,10 +36,6 @@ const NewsContainer = (props) => {
     getData()
   }, [category])
 
-  const handleOnExpand = () => {
-    setExpand(!expand)
-  }
-
   return (
     <div className="news-container container justify-content-center w-100  ">
       <Heading heading="Online News" />
@@ -65,8 +61,6 @@ const NewsContainer = (props) => {
                       description={news.description === null ? "" : news.description.split(" ").slice(0, 18).join(" ") + "..."}
                       author={news.author}
                       url={news.url}
-                      onExpand={handleOnExpand}
-                      expand={expand}
                     />
                   ) : null}
                 </>
