@@ -14,7 +14,6 @@ const NewsContainer = (props) => {
   const [pageNo, setPageNo] = useState(1);
   const [totalResults, setTotalReults] = useState();
   const { category } = useContext(Context);
-  const [expand, setExpand] = useState(false)
 
 
   const getData = async () => {
